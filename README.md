@@ -22,8 +22,8 @@ echo date('Y-m-d H:i:s',$oCanton->getNextDayOffByCanton('VD'));
 - Use similar code to load object
 ```php
 <?php
-require __DIR__ . '/dominiquevienne/swiss-off/src/SwissOff.php';
-require __DIR__ . '/dominiquevienne/swiss-off/src/Canton.php';
+require __DIR__ . '/swiss-off/src/SwissOff.php';
+require __DIR__ . '/swiss-off/src/Canton.php';
 
 $oCanton  = new Dominiquevienne\SwissOff\Canton();
 echo date('Y-m-d H:i:s',$oCanton->getNextDayOffByCanton('VD'));
@@ -46,3 +46,13 @@ class yourController {
   }
 }
 ```
+## Available functions
+### Canton
+#### getDaysOffByCantonAndTime($canton, $time = null)
+This function will return an array containing every day off of the year of the given time for the specified canton (two letters code). 
+
+If no time is given, current time will be used. 
+#### getDaysOffNames()
+This function will return an array containing all days off machine name (eg. Christmas, Berchtold, ...)
+#### getCantonsByDayOffName($dayOffName)
+This function will return an array containing all cantons that are off for this day off. 
