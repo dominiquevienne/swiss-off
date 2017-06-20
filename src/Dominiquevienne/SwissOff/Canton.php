@@ -150,6 +150,7 @@ class Canton {
   }
 
 
+    
   /**
    * Returns a list of next days off by canton 2 letters code
    *
