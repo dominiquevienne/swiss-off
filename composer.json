@@ -1,5 +1,5 @@
 {
-  "name": "Dominiquevienne/swissOff",
+  "name": "dominiquevienne/swiss-off",
   "description": "PHP Library used to know if a day is off in a given Swiss Canton",
   "license": "Apache-2.0",
   "keywords": ["php"],
